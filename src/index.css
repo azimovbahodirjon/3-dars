@@ -10,6 +10,12 @@ body {
   background: linear-gradient(rgb(10, 231, 165), rgba(26, 236, 54, 0.5));
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 30px;
+}
+
 #root {
   margin-left: auto;
   margin-right: auto;
@@ -80,12 +86,6 @@ img {
   background-color: #fff5e1;
   padding: 20px 20px 30px 30px;
   border-radius: 12px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px 30px;
 }
 
 li {
