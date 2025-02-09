@@ -40,23 +40,20 @@ const App = () => {
   const deleteBtn = (id) => {
     setProducts(products.filter((product) => product.id != id));
   };
+
   return (
     <div>
       <h1>Products</h1>
       {products.length == 0 && <h1>Tugadi😃</h1>}
-    </div>
-  );
-  return (
-    <div>
-      <h1>Products</h1>
       <ul>
         {products.map((product, arr) => {
           return (
-            <div key={product.id}>
-              <img src={product.images[0]} alt="" />
+            <li key={product.id}>
+              <img src={product.images[0]} alt="" width={100} />
               <h2>{product.title}</h2>
-              <p>Category:{product.category}</p>
-            </div>
+              <p>Category: {product.category}</p>
+              <button onClick={() => deleteBtn(product.id)}>Delete</button>
+            </li>
           );
         })}
       </ul>

@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+}
+
+button {
+  border-radius: 2px solid;
+  padding: 10px 20px;
+}
+
+li {
+  list-style: none;
+}
